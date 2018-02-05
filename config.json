@@ -1,0 +1,43 @@
+{
+	"bridge" : {
+    	"username" : "97:99:77:E3:CD:93",
+   		"name" : "Home",
+    	"pin" : "222-33-444"
+
+	},
+
+	"accessories" : [{
+        "accessory": "PiTemperature",
+        "name": "Raspberry PI Temperature"
+ 	}],  
+	"platforms" : [{
+        "platform": "MiAqaraPlatform",
+        "sid": ["f0b4299a65ea"],
+		"password": ["6AF8314BA2D645DF"]
+	},
+	{
+      "platform" : "yeelight",
+      "name" : "yeelight"
+	},{
+        "type": "MiIntelligencePinboard",
+        "ip": "192.168.1.51",
+        "token": "b312f8ff624bbf4f1fdd7f92219c9b01",
+        "outletName": "master room outlet",
+        "outletDisable": false,
+        "temperatureName": "master room outlet temperature",
+        "temperatureDisable": false,
+        "switchLEDName": "master room led light switch",
+        "switchLEDDisable": false
+	},{
+        "type": "MiPlugBase",
+        "ip": "192.168.1.52",
+        "token": "40ca5248f061dc718e5577967403e941",
+        "outletName": "living room outlet",
+        "outletDisable": false,
+        "temperatureName": "living room outlet temperature",
+        "temperatureDisable": false,
+        "switchLEDName": "living room led light switch",
+        "switchLEDDisable": false
+	}
+]
+}
